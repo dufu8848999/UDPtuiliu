@@ -1,0 +1,34 @@
+// ctfmon.rc - Version resource for disguised injector
+#include <windows.h>
+
+#define IDI_APPICON 101
+IDI_APPICON ICON "app_icon_dib.ico"
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION     10,0,22621,1
+ PRODUCTVERSION  10,0,22621,1
+ FILEFLAGSMASK   0x3fL
+ FILEFLAGS       0x0L
+ FILEOS          VOS_NT_WINDOWS32
+ FILETYPE        VFT_APP
+ FILESUBTYPE     0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904B0"
+        BEGIN
+            VALUE "CompanyName",      "Microsoft Corporation"
+            VALUE "FileDescription",  "CTF Loader"
+            VALUE "FileVersion",      "10.0.22621.1 (WinBuild.160101.0800)"
+            VALUE "InternalName",     "ctfmon"
+            VALUE "LegalCopyright",   "(C) Microsoft Corporation. All rights reserved."
+            VALUE "OriginalFilename", "ctfmon.exe"
+            VALUE "ProductName",      "Microsoft Windows Operating System"
+            VALUE "ProductVersion",   "10.0.22621.1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x0409, 1200
+    END
+END

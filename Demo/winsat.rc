@@ -1,0 +1,31 @@
+// winsat.rc - Version resource for disguised DLL
+#include <windows.h>
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION     10,0,22621,1
+ PRODUCTVERSION  10,0,22621,1
+ FILEFLAGSMASK   0x3fL
+ FILEFLAGS       0x0L
+ FILEOS          VOS_NT_WINDOWS32
+ FILETYPE        VFT_DLL
+ FILESUBTYPE     0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904B0"
+        BEGIN
+            VALUE "CompanyName",      "Microsoft Corporation"
+            VALUE "FileDescription",  "Windows System Assessment Tool"
+            VALUE "FileVersion",      "10.0.22621.1 (WinBuild.160101.0800)"
+            VALUE "InternalName",     "winsat.dll"
+            VALUE "LegalCopyright",   "(C) Microsoft Corporation. All rights reserved."
+            VALUE "OriginalFilename", "winsat.dll"
+            VALUE "ProductName",      "Microsoft Windows Operating System"
+            VALUE "ProductVersion",   "10.0.22621.1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x0409, 1200
+    END
+END
